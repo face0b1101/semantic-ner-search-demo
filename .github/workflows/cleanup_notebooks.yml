@@ -1,0 +1,22 @@
+name: Clean Jupyter Notebooks
+
+on: [push, pull_request]
+
+jobs:
+  remove_outputs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install nbstripout
+        run: pip install nbstripout
+      - name: Strip output from Jupyter Notebooks
+        run: nbstripout **/*.ipynb
+      - name: Commit changes
+        run: |
+          git config --global user.name 'face0b1101'
+          git config --global user.email '6190957+face0b1101@users.noreply.github.com'
+          git add **/*.ipynb
+          git push
