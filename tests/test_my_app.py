@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 
-from python_poetry_boilerplate import __version__
-from python_poetry_boilerplate.libs.my_lib import MyLib
-from python_poetry_boilerplate.main import something
+from semantic_ner_search_demo import __version__
+from semantic_ner_search_demo.libs.my_lib import MyLib
+from semantic_ner_search_demo.main import something
 
 
 def test_version():
