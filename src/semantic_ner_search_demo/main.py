@@ -141,7 +141,9 @@ def update_results(results):
                         }.get(tag_type, "#555555")
 
                         st.markdown(
-                            f"<span style='background-color: {tag_color}; color: white; padding: 5px; margin: 2px; border-radius: 5px;'>{tag_type}: {tag_value}</span>",
+                            f"<span style='background-color: {tag_color}; "
+                            "color: white; padding: 5px; margin: 2px; "
+                            f"border-radius: 5px;'>{tag_type}: {tag_value}</span>",
                             unsafe_allow_html=True,
                         )
 
