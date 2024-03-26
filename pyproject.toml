@@ -28,6 +28,7 @@ isort = "^5.13.2"
 tox = "^4.11.4"
 flake8-bugbear = "^23.12.2"
 kaggle = "^1.6.8"
+nbstripout = "^0.7.1"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
