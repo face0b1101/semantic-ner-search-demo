@@ -13,7 +13,11 @@ from semantic_ner_search_demo.config.env import (
     ES_SEARCH_INDEX,
 )
 
-es = Elasticsearch(cloud_id=ES_CLOUD_ID, api_key=ES_API_KEY)
+try:
+    es = Elasticsearch(cloud_id=ES_CLOUD_ID, api_key=ES_API_KEY)
+
+except ValueError as e:
+    st.error(f"Error connecting to Elasticsearch: {e}")
 
 
 def main():

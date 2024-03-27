@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  semantic-search-demo:
+    image: face0b1101/semantic-ner-search-demo:0.1
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: runtime
+      args:
+        DOCKER_BUILDKIT: 1
+    container_name: semantic-search-demo
+    env_file:
+      - .env
+    ports:
+      - "8501:8501"
+    restart: unless-stopped

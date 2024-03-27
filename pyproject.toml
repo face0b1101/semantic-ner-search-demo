@@ -15,7 +15,6 @@ python-decouple = "^3.8"
 unipath = "^1.1"
 rich = "^13.7.0"
 tqdm = "^4.66.1"
-eland = "^8.12.1"
 elasticsearch = "^8.12.1"
 streamlit = "^1.32.2"
 
@@ -30,6 +29,7 @@ flake8-bugbear = "^23.12.2"
 kaggle = "^1.6.8"
 nbstripout = "^0.7.1"
 pre-commit = "^3.7.0"
+eland = "^8.12.1"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
