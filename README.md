@@ -4,7 +4,7 @@ Built following the excellent [blog post by Camille Corti-Georgiou](https://www.
 
 Uses [Poetry](https://python-poetry.org) for dependancies management, and [streamlit](https://streamlit.io/) for the web interface.
 
-Once you've installed the dependencies, you can run the app with `poetry run semantic_ner_search_demo`. This will launch the web interface, which will be available at `http://127.0.0.1:8501/`.
+Once you've installed the dependencies, you can run the app with `poetry run semantic_ner_search_demo`. This will launch the web interface, which will be available at `http://127.0.0.1:8501`.
 
 ## Docker
 
