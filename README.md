@@ -19,7 +19,7 @@ First, build the docker container. There is a Dockerfile in the root of the repo
 DOCKER_BUILDKIT=1 docker build -f Dockerfile --target runtime -t face0b1101/semantic-ner-search-demo:0.1 .
 
 # docker-compose
-docker-compose build
+docker compose build
 ```
 
 Once the container is built, you can run it with:
@@ -29,7 +29,7 @@ Once the container is built, you can run it with:
 docker run --rm --name demo --env-file .env -p 8501:8501 face0b1101/semantic-ner-search-demo:0.1
 
 # docker-compose
-docker-compose up
+docker compose up
 ```
 
 This runs the container and exposes port 8501 on the host.
